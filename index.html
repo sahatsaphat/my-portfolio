@@ -74,7 +74,7 @@
   .folder-panel {
     clip-path: polygon(0% 0%, 25% 0%, 30% 15%, 100% 15%, 100% 100%, 0% 100%);
     transition: transform 0.5s ease-in-out;
-    transform: translateY(82%);
+    transform: translateY(100%);
   }
   .group:hover .folder-panel { transform: translateY(0); }
 
@@ -184,11 +184,11 @@
           <span class="border border-primary px-sm py-xs font-label-md text-label-md uppercase bg-transparent">Social Media</span>
           <span class="border border-primary px-sm py-xs font-label-md text-label-md uppercase bg-transparent">Character Design</span>
         </div>
-        <a class="inline-flex items-center gap-2 mt-lg bg-primary text-on-primary px-lg py-md border border-primary font-label-md text-label-md uppercase tracking-widest hover:bg-secondary hover:text-primary transition-all duration-300 w-fit" href="Port_NEW.pdf" target="_blank" download>
+        <a class="inline-flex items-center gap-2 mt-lg bg-primary text-on-primary px-lg py-md border border-primary font-label-md text-label-md uppercase tracking-widest hover:bg-secondary hover:text-primary transition-all duration-300 w-fit" href="Sahatsaphat_Chanurai_Resume.pdf" target="_blank" download>
           <svg fill="none" height="20" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" viewBox="0 0 24 24" width="20">
             <path d="M12 5v14M19 12l-7 7-7-7M5 21h14"></path>
           </svg>
-          Download Portfolio PDF
+          Download Resume
         </a>
       </div>
       <!-- Right Profile Card -->
@@ -221,28 +221,29 @@
     <div class="max-w-6xl mx-auto">
       <div class="flex items-end justify-between mb-xl border-b border-primary pb-sm">
         <h2 class="font-display text-[48px] md:text-display text-primary font-extrabold uppercase tracking-tighter">Works</h2>
-        <span class="font-label-md text-label-md text-primary border border-primary px-sm py-xs mb-2">Total: 7</span>
+        <span class="font-label-md text-label-md text-primary border border-primary px-sm py-xs mb-2">Total: 8</span>
       </div>
 
       <div class="grid grid-cols-1 gap-gutter md:grid-cols-2">
 
-        <!-- Project 1: Weekdays (WEEKDAY©) -->
+        <!-- Project 1: Weekdays -->
         <div onclick="openPanel('weekdays')" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#1A2B8C] cursor-pointer block">
           <div class="absolute inset-0 z-0 overflow-hidden">
             <img src="weekdays_1.webp" alt="Weekdays Branding" class="project-thumb">
           </div>
           <div class="absolute inset-0 bg-[#1A2B8C]/30 z-1"></div>
-          <div class="relative z-5 p-6 pb-20">
-            <span class="font-label-md text-[10px] text-white/70 uppercase tracking-widest">Branding</span>
-            <h3 class="font-headline-md text-headline-md text-white font-extrabold mb-1 mt-1">Weekdays©</h3>
-            <p class="font-body-md text-body-md text-white/80 line-clamp-2">Garments Youth streetwear brand identity — "Uniform for the Restless."</p>
-          </div>
+          <!-- folder-panel replaces the old info div; info is now inside -->
           <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
             <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
-              <div class="flex flex-wrap gap-2">
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Branding</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Packaging</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Campaign</span>
+              <div>
+                <span class="font-label-md text-[10px] text-primary/60 uppercase tracking-widest block mb-1">Branding</span>
+                <h3 class="font-headline-md text-headline-md text-primary font-extrabold mb-1">Weekdays</h3>
+                <p class="font-body-md text-body-md text-primary/70 line-clamp-2 mb-3">Garments Youth streetwear brand identity — "Uniform for the Restless."</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Branding</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Packaging</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Campaign</span>
+                </div>
               </div>
               <div class="flex justify-between items-center mt-auto">
                 <span class="font-headline-md text-primary">View Project</span>
@@ -255,19 +256,19 @@
         <!-- Project 2: KURA TEA -->
         <div onclick="openPanel('kura')" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#D8E8D0] cursor-pointer block">
           <div class="absolute inset-0 z-0 overflow-hidden">
-            <img src="kura_1.webp" alt="Kura Tea Branding" class="project-thumb">
-          </div>
-          <div class="relative z-5 p-6 pb-20">
-            <span class="font-label-md text-[10px] text-primary/70 uppercase tracking-widest">Branding · Packaging</span>
-            <h3 class="font-headline-md text-headline-md text-primary font-extrabold mb-1 mt-1">KURA TEA</h3>
-            <p class="font-body-md text-body-md text-primary/80 line-clamp-2">Matcha and Soul. Minimal brand identity for a Japanese-inspired matcha brand.</p>
+            <img src="kura cover.png" alt="Kura Tea Branding" class="project-thumb">
           </div>
           <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
             <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
-              <div class="flex flex-wrap gap-2">
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Logo Design</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Packaging</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Brand Identity</span>
+              <div>
+                <span class="font-label-md text-[10px] text-primary/60 uppercase tracking-widest block mb-1">Branding · Packaging</span>
+                <h3 class="font-headline-md text-headline-md text-primary font-extrabold mb-1">KURA TEA</h3>
+                <p class="font-body-md text-body-md text-primary/70 line-clamp-2 mb-3">Matcha and Soul. Minimal brand identity for a Japanese-inspired matcha brand.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Logo Design</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Packaging</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Brand Identity</span>
+                </div>
               </div>
               <div class="flex justify-between items-center mt-auto">
                 <span class="font-headline-md text-primary">View Project</span>
@@ -277,23 +278,23 @@
           </div>
         </div>
 
-        <!-- Project 3: ChewDee (Decode Hackathon) -->
+        <!-- Project 3: ChewDee -->
         <div onclick="openPanel('chewdee')" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#5CC8C0] cursor-pointer block">
           <div class="absolute inset-0 z-0 overflow-hidden">
-            <img src="chewdee_1.webp" alt="ChewDee Packaging" class="project-thumb">
+            <img src="chewdee cover.png" alt="ChewDee Packaging" class="project-thumb">
           </div>
           <div class="absolute inset-0 bg-[#5CC8C0]/20 z-1"></div>
-          <div class="relative z-5 p-6 pb-20">
-            <span class="font-label-md text-[10px] text-primary/70 uppercase tracking-widest">Decode Research Hackathon 2026</span>
-            <h3 class="font-headline-md text-headline-md text-primary font-extrabold mb-1 mt-1">ChewDee</h3>
-            <p class="font-body-md text-body-md text-primary/80 line-clamp-2">Probiotic pop rice packaging & branding — "Born from Thai Roots. Built for Thai Kids."</p>
-          </div>
           <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
             <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
-              <div class="flex flex-wrap gap-2">
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Packaging</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Branding</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Pitch Deck</span>
+              <div>
+                <span class="font-label-md text-[10px] text-primary/60 uppercase tracking-widest block mb-1">Decode Research Hackathon 2026</span>
+                <h3 class="font-headline-md text-headline-md text-primary font-extrabold mb-1">ChewDee</h3>
+                <p class="font-body-md text-body-md text-primary/70 line-clamp-2 mb-3">Probiotic pop rice packaging & branding — "Born from Thai Roots. Built for Thai Kids."</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Packaging</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Branding</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Pitch Deck</span>
+                </div>
               </div>
               <div class="flex justify-between items-center mt-auto">
                 <span class="font-headline-md text-primary">View Project</span>
@@ -306,19 +307,19 @@
         <!-- Project 4: MADs Degree Show 2026 -->
         <div onclick="openPanel('mads')" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-black cursor-pointer block">
           <div class="absolute inset-0 z-0 overflow-hidden">
-            <img src="mads_1.webp" alt="MADs Degree Show" class="project-thumb opacity-60">
-          </div>
-          <div class="relative z-5 p-6 pb-20">
-            <span class="font-label-md text-[10px] text-white/60 uppercase tracking-widest">Thesis Exhibition · Event Design</span>
-            <h3 class="font-headline-md text-headline-md text-white font-extrabold mb-1 mt-1">MADs Degree Show 2026</h3>
-            <p class="font-body-md text-body-md text-white/80 line-clamp-2">Creative Event Director — "Dissolve/Contain" art thesis exhibition at CMU Art and Culture Center.</p>
+            <img src="mads.JPG" alt="MADs Degree Show" class="project-thumb opacity-70">
           </div>
           <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
             <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
-              <div class="flex flex-wrap gap-2">
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Event Design</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Art Direction</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Production</span>
+              <div>
+                <span class="font-label-md text-[10px] text-primary/60 uppercase tracking-widest block mb-1">Thesis Exhibition · Event Design</span>
+                <h3 class="font-headline-md text-headline-md text-primary font-extrabold mb-1">MADs Degree Show 2026</h3>
+                <p class="font-body-md text-body-md text-primary/70 line-clamp-2 mb-3">Creative Event Director — "Dissolve/Contain" art thesis exhibition at CMU Art and Culture Center.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Event Design</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Art Direction</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Production</span>
+                </div>
               </div>
               <div class="flex justify-between items-center mt-auto">
                 <span class="font-headline-md text-primary">View Project</span>
@@ -331,19 +332,19 @@
         <!-- Project 5: Character Design -->
         <div onclick="openPanel('character')" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#7B5EA7] cursor-pointer block">
           <div class="absolute inset-0 z-0 overflow-hidden">
-            <img src="character_1.webp" alt="Character Design CMU" class="project-thumb opacity-80">
-          </div>
-          <div class="relative z-5 p-6 pb-20">
-            <span class="font-label-md text-[10px] text-white/70 uppercase tracking-widest">Character Design</span>
-            <h3 class="font-headline-md text-headline-md text-white font-extrabold mb-1 mt-1">CMU Sport Mascot</h3>
-            <p class="font-body-md text-body-md text-white/80 line-clamp-2">Phana — CMU White Elephant mascot for internal sports games "ลูกฮ้าย คมส."</p>
+            <img src="character cover.PNG" alt="Character Design CMU" class="project-thumb opacity-80">
           </div>
           <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
             <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
-              <div class="flex flex-wrap gap-2">
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Character Design</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Illustration</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Social Media</span>
+              <div>
+                <span class="font-label-md text-[10px] text-primary/60 uppercase tracking-widest block mb-1">Character Design</span>
+                <h3 class="font-headline-md text-headline-md text-primary font-extrabold mb-1">Character Design</h3>
+                <p class="font-body-md text-body-md text-primary/70 line-clamp-2 mb-3">Phana — CMU White Elephant mascot for internal sports games "ลูกฮ้าย คมส."</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Character Design</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Illustration</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Social Media</span>
+                </div>
               </div>
               <div class="flex justify-between items-center mt-auto">
                 <span class="font-headline-md text-primary">View Project</span>
@@ -353,22 +354,47 @@
           </div>
         </div>
 
-        <!-- Project 6: Short Film -->
-        <div onclick="openPanel('shortfilm')" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#0D0D0D] cursor-pointer block">
+        <!-- Project 6: CMU Sport Mascot (แยกออกมาใหม่) -->
+        <div onclick="openPanel('cmusport')" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#1A3A2C] cursor-pointer block">
           <div class="absolute inset-0 z-0 overflow-hidden">
-            <img src="shortfilm_1.webp" alt="Short Film อาก เลือด" class="project-thumb opacity-50">
-          </div>
-          <div class="relative z-5 p-6 pb-20">
-            <span class="font-label-md text-[10px] text-white/60 uppercase tracking-widest">Short Film · Sound Design</span>
-            <h3 class="font-headline-md text-headline-md text-white font-extrabold mb-1 mt-1">อาก เลือด (HAK LUEAT)</h3>
-            <p class="font-body-md text-body-md text-white/70 line-clamp-2">Psychological short film — Sound Recordist, Sound Designer & Post-Production Supervisor.</p>
+            <img src="cmu sport cover.jpg" alt="CMU Sport Mascot" class="project-thumb opacity-80">
           </div>
           <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
             <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
-              <div class="flex flex-wrap gap-2">
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Sound Design</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Production</span>
-                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Post-Production</span>
+              <div>
+                <span class="font-label-md text-[10px] text-primary/60 uppercase tracking-widest block mb-1">Sport · Apparel Design</span>
+                <h3 class="font-headline-md text-headline-md text-primary font-extrabold mb-1">CMU Sport Mascot</h3>
+                <p class="font-body-md text-body-md text-primary/70 line-clamp-2 mb-3">Sport jersey and apparel design for CMU Badminton Club.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Apparel Design</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Branding</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Social Media</span>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-auto">
+                <span class="font-headline-md text-primary">View Project</span>
+                <span class="material-symbols-outlined text-3xl">arrow_outward</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7: Short Film -->
+        <div onclick="openPanel('shortfilm')" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#0D0D0D] cursor-pointer block">
+          <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="shortfilm cover" alt="Short Film อาก เลือด" class="project-thumb opacity-50">
+          </div>
+          <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
+            <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
+              <div>
+                <span class="font-label-md text-[10px] text-primary/60 uppercase tracking-widest block mb-1">Short Film · Sound Design</span>
+                <h3 class="font-headline-md text-headline-md text-primary font-extrabold mb-1">อาก เลือด (HAK LUEAT)</h3>
+                <p class="font-body-md text-body-md text-primary/70 line-clamp-2 mb-3">Psychological short film — Sound Recordist, Sound Designer & Post-Production Supervisor.</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Sound Design</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Production</span>
+                  <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Post-Production</span>
+                </div>
               </div>
               <div class="flex justify-between items-center mt-auto">
                 <span class="font-headline-md text-primary">View Project</span>
@@ -413,8 +439,8 @@
       <div class="flex flex-col gap-md">
         <a class="font-headline-md text-headline-md font-extrabold text-on-primary" href="#">Sahatsaphat.</a>
         <div class="flex flex-col gap-xs font-body-md text-body-md text-on-primary">
-          <a class="hover:text-secondary transition-colors flex items-center gap-2" href="mailto:sahassapat2605@gmail.com">
-            <span class="material-symbols-outlined text-sm">mail</span> sahassapat2605@gmail.com
+          <a class="hover:text-secondary transition-colors flex items-center gap-2" href="mailto:sahatsaphatchanurai@gmail.com">
+            <span class="material-symbols-outlined text-sm">mail</span> sahatsaphatchanurai@gmail.com
           </a>
           <a class="hover:text-secondary transition-colors flex items-center gap-2" href="tel:+66841413238">
             <span class="material-symbols-outlined text-sm">call</span> +66 84 141 3238
@@ -427,10 +453,10 @@
           <a class="text-on-primary hover:text-secondary transition-colors border border-on-primary/30 p-2" href="https://linkedin.com/in/sahassapat-canari-82723933b" target="_blank">
             <span class="material-symbols-outlined">link</span>
           </a>
-          <a class="text-on-primary hover:text-secondary transition-colors border border-on-primary/30 p-2" href="Port_NEW.pdf" target="_blank">
+          <a class="text-on-primary hover:text-secondary transition-colors border border-on-primary/30 p-2" href="Sahatsaphat_Chanurai_Resume.pdf" target="_blank">
             <span class="material-symbols-outlined">work</span>
           </a>
-          <a class="text-on-primary hover:text-secondary transition-colors border border-on-primary/30 p-2" href="mailto:sahassapat2605@gmail.com">
+          <a class="text-on-primary hover:text-secondary transition-colors border border-on-primary/30 p-2" href="mailto:sahatsaphatchanurai@gmail.com">
             <span class="material-symbols-outlined">mail</span>
           </a>
         </div>
@@ -634,7 +660,7 @@
 const PROJECTS = [
   {
     key: "weekdays",
-    title: "Weekdays©",
+    title: "Weekdays",
     category: "Branding · Packaging · Campaign",
     images: [
       "weekdays_1.webp",
@@ -650,7 +676,7 @@ const PROJECTS = [
     title: "KURA TEA",
     category: "Logo Design · Packaging · Brand Identity",
     images: [
-      "kura_1.webp",
+      "kura cover.png",
       "Kura 2_1.webp",
       "Kura 3_1.webp",
       "Kura 4_1.webp",
@@ -661,7 +687,7 @@ const PROJECTS = [
     title: "ChewDee",
     category: "Packaging · Branding · Pitch Deck",
     images: [
-      "chewdee_1.webp",
+      "chewdee cover.png",
       "ChewDee 2_1.webp",
       "ChewDee 3_1.webp",
     ]
@@ -671,7 +697,7 @@ const PROJECTS = [
     title: "MADs Degree Show 2026",
     category: "Event Design · Art Direction · Production",
     images: [
-      "mads_1.webp",
+      "mads.JPG",
       "MADs degree show 2026_1.webp",
       "MADs degree show 2026_2.webp",
       "MADs degree show 2026_3.webp",
@@ -681,10 +707,19 @@ const PROJECTS = [
   },
   {
     key: "character",
-    title: "CMU Sport Mascot",
+    title: "Character Design",
     category: "Character Design · Illustration · Social Media",
     images: [
+      "character cover.PNG",
       "character_1.webp",
+    ]
+  },
+  {
+    key: "cmusport",
+    title: "CMU Sport Mascot",
+    category: "Apparel Design · Branding · Social Media",
+    images: [
+      "cmu sport cover.jpg",
       "cmu_badminton_1.webp",
     ]
   },
@@ -693,7 +728,7 @@ const PROJECTS = [
     title: "อาก เลือด (HAK LUEAT)",
     category: "Sound Design · Production · Post-Production",
     images: [
-      "shortfilm_1.webp",
+      "shortfilm cover",
       "Short film 2_1.webp",
     ]
   },
@@ -719,7 +754,6 @@ function openPanel(keyOrIndex) {
   renderPanel(PROJECTS[idx]);
   document.getElementById('proj-panel').classList.add('open');
   document.body.style.overflow = 'hidden';
-  // scroll feed back to top
   const feed = document.getElementById('proj-feed');
   feed.scrollTop = 0;
 }
@@ -736,7 +770,6 @@ function renderPanel(project) {
   document.getElementById('proj-count').textContent =
     `${currentIndex + 1} / ${PROJECTS.length}`;
 
-  // prev / next buttons
   const prevBtn = document.getElementById('proj-prev-btn');
   const nextBtn = document.getElementById('proj-next-btn');
   const prevLabel = document.getElementById('proj-prev-label');
@@ -749,7 +782,6 @@ function renderPanel(project) {
   prevLabel.textContent = hasPrev ? PROJECTS[currentIndex - 1].title : 'Previous';
   nextLabel.textContent = hasNext ? PROJECTS[currentIndex + 1].title : 'Next';
 
-  // Build image feed
   const container = document.getElementById('proj-images');
   container.innerHTML = '';
 
@@ -764,7 +796,6 @@ function renderPanel(project) {
     container.appendChild(wrap);
   });
 
-  // Intersection observer → staggered reveal
   if (scrollObserver) scrollObserver.disconnect();
   scrollObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -777,7 +808,6 @@ function renderPanel(project) {
 
   container.querySelectorAll('.proj-img-wrap').forEach(el => scrollObserver.observe(el));
 
-  // Trigger first image immediately
   requestAnimationFrame(() => {
     const first = container.querySelector('.proj-img-wrap');
     if (first) first.classList.add('visible');
@@ -787,7 +817,6 @@ function renderPanel(project) {
 function navigateProject(dir) {
   const next = currentIndex + dir;
   if (next < 0 || next >= PROJECTS.length) return;
-  // fade out → swap → scroll top
   const feed = document.getElementById('proj-feed');
   document.getElementById('proj-images').style.opacity = '0';
   document.getElementById('proj-images').style.transition = 'opacity 0.2s';
@@ -799,7 +828,6 @@ function navigateProject(dir) {
   }, 200);
 }
 
-// Keyboard: Escape to close
 document.addEventListener('keydown', e => {
   if (!document.getElementById('proj-panel').classList.contains('open')) return;
   if (e.key === 'Escape') closePanel();
