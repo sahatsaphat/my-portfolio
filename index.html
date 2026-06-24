@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sahatsaphat Chanurai | Creative &amp; Branding Designer</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Sora:wght@400;500;600;700;800&family=Fredoka:wght@500;600;700&family=Caveat:wght@700&family=Ephesis&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#3E2F2B",
+          "secondary": "#73A9D9",
+          "background": "#F4F1EA",
+          "on-primary": "#F4F1EA",
+          "on-surface": "#3E2F2B",
+        },
+        borderRadius: {
+          "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "0px"
+        },
+        spacing: {
+          "margin-desktop": "64px", "base": "8px", "md": "24px",
+          "gutter": "24px", "lg": "48px", "sm": "16px",
+          "margin-mobile": "16px", "xl": "80px", "xs": "4px"
+        },
+        fontFamily: {
+          "caption": ["Outfit"], "label-md": ["Sora"], "body-lg": ["Outfit"],
+          "headline-md": ["Sora"], "display": ["Sora"], "body-md": ["Outfit"],
+          "headline-lg": ["Sora"], "cursive": ["Caveat"], "accent": ["Ephesis", "cursive"]
+        },
+        fontSize: {
+          "caption": ["12px", {"lineHeight":"1.4","fontWeight":"400"}],
+          "label-md": ["14px", {"lineHeight":"1.0","letterSpacing":"0.05em","fontWeight":"500"}],
+          "body-lg": ["18px", {"lineHeight":"1.6","fontWeight":"400"}],
+          "headline-md": ["24px", {"lineHeight":"1.3","fontWeight":"800"}],
+          "display": ["64px", {"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"800"}],
+          "body-md": ["16px", {"lineHeight":"1.6","fontWeight":"400"}],
+          "headline-lg": ["40px", {"lineHeight":"1.2","letterSpacing":"-0.01em","fontWeight":"800"}]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { background-color: #F4F1EA; }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+  @keyframes float-subtle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .animate-float-subtle { animation: float-subtle 4s ease-in-out infinite; }
+
+  .grid-bg {
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, rgba(62, 47, 43, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(62, 47, 43, 0.05) 1px, transparent 1px);
+  }
+
+  .no-radius { border-radius: 0 !important; }
+  .capsule-pill { border-radius: 50px !important; }
+
+  /* Project card hover folder effect */
+  .folder-panel {
+    clip-path: polygon(0% 0%, 25% 0%, 30% 15%, 100% 15%, 100% 100%, 0% 100%);
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(82%);
+  }
+  .group:hover .folder-panel { transform: translateY(0); }
+
+  /* Smooth scroll */
+  html { scroll-behavior: smooth; }
+
+  /* Image object-fit */
+  .project-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .group:hover .project-thumb { transform: scale(1.05); }
+</style>
+</head>
+<body class="font-body-md text-body-md text-primary bg-background min-h-screen flex flex-col selection:bg-secondary selection:text-primary">
+
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/90 backdrop-blur-md flex justify-between items-center px-margin-mobile md:px-margin-desktop py-base">
+  <a class="font-headline-md text-headline-md font-extrabold text-primary tracking-tight" href="#">Nont.</a>
+  <div class="hidden md:flex gap-8">
+    <a class="text-primary hover:text-secondary transition-colors duration-200 font-label-md text-label-md uppercase" href="#about">About</a>
+    <a class="text-primary font-bold border-b border-primary hover:text-secondary transition-colors duration-200 font-label-md text-label-md uppercase" href="#works">Works</a>
+    <a class="text-primary hover:text-secondary transition-colors duration-200 font-label-md text-label-md uppercase" href="#contact">Contact</a>
+  </div>
+  <button class="md:hidden" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+    <span class="material-symbols-outlined text-primary text-2xl">menu</span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden fixed top-14 left-0 right-0 z-40 bg-background border-b border-primary px-margin-mobile py-md flex flex-col gap-4">
+  <a class="text-primary font-label-md text-label-md uppercase" href="#about" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+  <a class="text-primary font-label-md text-label-md uppercase" href="#works" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Works</a>
+  <a class="text-primary font-label-md text-label-md uppercase" href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+</div>
+
+<!-- Hero Section -->
+<header class="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-xl px-margin-mobile md:px-margin-desktop grid-bg border-b border-primary overflow-hidden">
+  <div class="relative z-10 w-full max-w-6xl flex flex-col items-center justify-center text-center">
+    <div class="relative inline-block">
+      <h1 class="text-[14vw] md:text-[160px] leading-[0.9] text-primary font-bold flex flex-col items-center" style="font-family: 'Outfit', sans-serif; font-style: italic; font-weight: 700;">
+        <span>Creative</span>
+        <span>designer</span>
+        <span class="relative">
+          portfolio.
+          <!-- Campaign Capsule -->
+          <div class="absolute top-[105%] left-[62%] -translate-x-1/2 z-20 animate-float-subtle capsule-pill bg-transparent text-primary px-6 md:px-10 py-2 md:py-3 border-2 border-primary font-semibold text-lg md:text-3xl font-label-md whitespace-nowrap" style="animation-duration: 5.5s;">
+            Campaign
+          </div>
+        </span>
+      </h1>
+      <!-- Floating Capsules -->
+      <div class="absolute -top-[5%] left-[50%] -translate-x-1/2 md:translate-x-0 md:left-[45%] z-20 animate-float-subtle capsule-pill bg-[#5E83AE] text-white px-6 md:px-10 py-2 md:py-3 border border-primary font-semibold text-lg md:text-3xl font-label-md" style="animation-duration: 5s;">
+        Branding
+      </div>
+      <div class="absolute top-[30%] -left-[10%] md:left-[-15%] z-20 animate-float-subtle capsule-pill bg-white text-primary px-6 md:px-10 py-2 md:py-3 border border-primary font-semibold text-lg md:text-3xl font-label-md" style="animation-duration: 6s; animation-delay: 0.5s;">
+        Packaging
+      </div>
+      <div class="absolute top-[35%] -right-[10%] md:right-[-10%] z-20 animate-float-subtle capsule-pill bg-[#1A2B4C] text-white px-6 md:px-10 py-2 md:py-3 border border-primary font-semibold text-lg md:text-3xl font-label-md" style="animation-duration: 4.5s; animation-delay: 1s;">Production</div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main class="flex-grow flex flex-col">
+
+  <!-- About Section -->
+  <section class="py-xl px-margin-mobile md:px-margin-desktop border-b border-primary bg-background" id="about">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+      <!-- Left Content -->
+      <div class="md:col-span-7 flex flex-col gap-lg pr-0 md:pr-lg">
+        <div class="flex items-center gap-sm">
+          <div class="w-12 h-px bg-primary"></div>
+          <h3 class="font-headline-md text-headline-md text-primary font-extrabold uppercase tracking-tight">Hi I'm Sahatsaphat Chanurai</h3>
+        </div>
+        <p class="font-body-lg text-body-lg text-primary max-w-2xl">
+          Creative designer experienced in campaign artwork, brand identity, packaging and social media. Passionate about crafting visuals that connect with audiences and deliver exceptional experiences across platforms.
+        </p>
+        <!-- Tools & Skills -->
+        <div class="grid grid-cols-2 gap-md mt-xs">
+          <div>
+            <p class="font-label-md text-[10px] text-primary/60 uppercase mb-2">Tools</p>
+            <div class="flex flex-col gap-1 font-label-md text-xs text-primary">
+              <span>Ai (Illustrator)</span>
+              <span>Ps (Photoshop)</span>
+              <span>Blender</span>
+              <span>Figma</span>
+              <span>Capcut</span>
+            </div>
+          </div>
+          <div>
+            <p class="font-label-md text-[10px] text-primary/60 uppercase mb-2">Soft Skills</p>
+            <div class="flex flex-col gap-1 font-label-md text-xs text-primary">
+              <span>Design Thinking</span>
+              <span>Open Feedback</span>
+              <span>Team Leadership</span>
+              <span>Trend Awareness</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-sm mt-md">
+          <span class="border border-primary px-sm py-xs font-label-md text-label-md uppercase bg-transparent">Campaign Artwork</span>
+          <span class="border border-primary px-sm py-xs font-label-md text-label-md uppercase bg-transparent">Brand Identity</span>
+          <span class="border border-primary px-sm py-xs font-label-md text-label-md uppercase bg-transparent">Packaging</span>
+          <span class="border border-primary px-sm py-xs font-label-md text-label-md uppercase bg-transparent">Social Media</span>
+          <span class="border border-primary px-sm py-xs font-label-md text-label-md uppercase bg-transparent">Character Design</span>
+        </div>
+        <a class="inline-flex items-center gap-2 mt-lg bg-primary text-on-primary px-lg py-md border border-primary font-label-md text-label-md uppercase tracking-widest hover:bg-secondary hover:text-primary transition-all duration-300 w-fit" href="Port_NEW.pdf" target="_blank" download>
+          <svg fill="none" height="20" stroke="currentColor" stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" viewBox="0 0 24 24" width="20">
+            <path d="M12 5v14M19 12l-7 7-7-7M5 21h14"></path>
+          </svg>
+          Download Portfolio PDF
+        </a>
+      </div>
+      <!-- Right Profile Card -->
+      <div class="md:col-span-5 border border-primary bg-background p-md mt-lg md:mt-0">
+        <div class="aspect-square border border-primary w-full bg-background mb-md relative overflow-hidden group">
+          <img alt="Sahatsaphat Chanurai" class="w-full h-full object-cover grayscale transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk7Yd8wFL9UweFPcJIwP8YBSkDrfMZ2_JFF0xPq8ZlI-b_Hgpxy6ozaXEe1AzfDi-NcxhnwIsr1Bbbh6pOOLhrFQYPyQEsq4v2oHMlDS8PIEhER8xgb98qbDYCMBlxOzuplI28ysGCwhxQNQ8-Rrcd_qAiSUPKaU1ibufojQMsR-ojzVGooXq0dzHRONoP9vLDEsUv8-v2uE-dwNlVZUbWx5yt7XYRbqMhRj6FdTgUMfMhMFYlmf6VWzlSqLUv4VdYs7ni7yDX2y8">
+          <div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-background/80 to-transparent"></div>
+          <p class="absolute bottom-sm left-sm font-label-md text-label-md text-primary bg-background px-1 border border-primary uppercase">Subject: Sahatsaphat</p>
+        </div>
+        <div class="flex flex-col gap-sm border-t border-primary pt-sm">
+          <div class="py-xs border-b border-primary">
+            <span class="font-label-md text-[10px] text-primary/60 uppercase block mb-1">Education</span>
+            <p class="font-label-md text-xs text-primary font-bold">Chiang Mai University — B.F.A. Media Art and Design (2022–2026)</p>
+          </div>
+          <div class="py-xs border-b border-primary">
+            <span class="font-label-md text-[10px] text-primary/60 uppercase block mb-1">Experience</span>
+            <p class="font-label-md text-xs text-primary font-bold">Graphic Designer Intern at Mind Maker Co., Ltd. &amp; Creative Event Director at MADS Degree Show 2026</p>
+          </div>
+          <div class="flex justify-between items-center py-xs">
+            <span class="font-label-md text-label-md text-primary uppercase">Availability</span>
+            <span class="font-label-md text-label-md text-primary font-bold">Open</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section class="py-xl px-margin-mobile md:px-margin-desktop bg-background border-b border-primary relative" id="works">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex items-end justify-between mb-xl border-b border-primary pb-sm">
+        <h2 class="font-display text-[48px] md:text-display text-primary font-extrabold uppercase tracking-tighter">Works</h2>
+        <span class="font-label-md text-label-md text-primary border border-primary px-sm py-xs mb-2">Total: 7</span>
+      </div>
+
+      <div class="grid grid-cols-1 gap-gutter md:grid-cols-2">
+
+        <!-- Project 1: Weekdays (WEEKDAY©) -->
+        <a href="projects/weekdays.html" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#1A2B8C] cursor-pointer block">
+          <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="images/projects/weekdays_1.webp" alt="Weekdays Branding" class="project-thumb">
+          </div>
+          <div class="absolute inset-0 bg-[#1A2B8C]/30 z-1"></div>
+          <div class="relative z-5 p-6 pb-20">
+            <span class="font-label-md text-[10px] text-white/70 uppercase tracking-widest">Branding</span>
+            <h3 class="font-headline-md text-headline-md text-white font-extrabold mb-1 mt-1">Weekdays©</h3>
+            <p class="font-body-md text-body-md text-white/80 line-clamp-2">Garments Youth streetwear brand identity — "Uniform for the Restless."</p>
+          </div>
+          <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
+            <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
+              <div class="flex flex-wrap gap-2">
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Branding</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Packaging</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Campaign</span>
+              </div>
+              <div class="flex justify-between items-center mt-auto">
+                <span class="font-headline-md text-primary">View Project</span>
+                <span class="material-symbols-outlined text-3xl">arrow_outward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 2: KURA TEA -->
+        <a href="projects/kura-tea.html" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#D8E8D0] cursor-pointer block">
+          <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="images/projects/kura_1.webp" alt="Kura Tea Branding" class="project-thumb">
+          </div>
+          <div class="relative z-5 p-6 pb-20">
+            <span class="font-label-md text-[10px] text-primary/70 uppercase tracking-widest">Branding · Packaging</span>
+            <h3 class="font-headline-md text-headline-md text-primary font-extrabold mb-1 mt-1">KURA TEA</h3>
+            <p class="font-body-md text-body-md text-primary/80 line-clamp-2">Matcha and Soul. Minimal brand identity for a Japanese-inspired matcha brand.</p>
+          </div>
+          <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
+            <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
+              <div class="flex flex-wrap gap-2">
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Logo Design</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Packaging</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Brand Identity</span>
+              </div>
+              <div class="flex justify-between items-center mt-auto">
+                <span class="font-headline-md text-primary">View Project</span>
+                <span class="material-symbols-outlined text-3xl">arrow_outward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 3: ChewDee (Decode Hackathon) -->
+        <a href="projects/chewdee.html" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#5CC8C0] cursor-pointer block">
+          <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="images/projects/chewdee_1.webp" alt="ChewDee Packaging" class="project-thumb">
+          </div>
+          <div class="absolute inset-0 bg-[#5CC8C0]/20 z-1"></div>
+          <div class="relative z-5 p-6 pb-20">
+            <span class="font-label-md text-[10px] text-primary/70 uppercase tracking-widest">Decode Research Hackathon 2026</span>
+            <h3 class="font-headline-md text-headline-md text-primary font-extrabold mb-1 mt-1">ChewDee</h3>
+            <p class="font-body-md text-body-md text-primary/80 line-clamp-2">Probiotic pop rice packaging & branding — "Born from Thai Roots. Built for Thai Kids."</p>
+          </div>
+          <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
+            <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
+              <div class="flex flex-wrap gap-2">
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Packaging</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Branding</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Pitch Deck</span>
+              </div>
+              <div class="flex justify-between items-center mt-auto">
+                <span class="font-headline-md text-primary">View Project</span>
+                <span class="material-symbols-outlined text-3xl">arrow_outward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 4: MADs Degree Show 2026 -->
+        <a href="projects/mads.html" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-black cursor-pointer block">
+          <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="images/projects/mads_1.webp" alt="MADs Degree Show" class="project-thumb opacity-60">
+          </div>
+          <div class="relative z-5 p-6 pb-20">
+            <span class="font-label-md text-[10px] text-white/60 uppercase tracking-widest">Thesis Exhibition · Event Design</span>
+            <h3 class="font-headline-md text-headline-md text-white font-extrabold mb-1 mt-1">MADs Degree Show 2026</h3>
+            <p class="font-body-md text-body-md text-white/80 line-clamp-2">Creative Event Director — "Dissolve/Contain" art thesis exhibition at CMU Art and Culture Center.</p>
+          </div>
+          <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
+            <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
+              <div class="flex flex-wrap gap-2">
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Event Design</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Art Direction</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Production</span>
+              </div>
+              <div class="flex justify-between items-center mt-auto">
+                <span class="font-headline-md text-primary">View Project</span>
+                <span class="material-symbols-outlined text-3xl">arrow_outward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 5: Character Design -->
+        <a href="projects/character-design.html" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#7B5EA7] cursor-pointer block">
+          <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="images/projects/character_1.webp" alt="Character Design CMU" class="project-thumb opacity-80">
+          </div>
+          <div class="relative z-5 p-6 pb-20">
+            <span class="font-label-md text-[10px] text-white/70 uppercase tracking-widest">Character Design</span>
+            <h3 class="font-headline-md text-headline-md text-white font-extrabold mb-1 mt-1">CMU Sport Mascot</h3>
+            <p class="font-body-md text-body-md text-white/80 line-clamp-2">Phana — CMU White Elephant mascot for internal sports games "ลูกฮ้าย คมส."</p>
+          </div>
+          <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
+            <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
+              <div class="flex flex-wrap gap-2">
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Character Design</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Illustration</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Social Media</span>
+              </div>
+              <div class="flex justify-between items-center mt-auto">
+                <span class="font-headline-md text-primary">View Project</span>
+                <span class="material-symbols-outlined text-3xl">arrow_outward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 6: Short Film -->
+        <a href="projects/short-film.html" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-[#0D0D0D] cursor-pointer block">
+          <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="images/projects/shortfilm_1.webp" alt="Short Film อาก เลือด" class="project-thumb opacity-50">
+          </div>
+          <div class="relative z-5 p-6 pb-20">
+            <span class="font-label-md text-[10px] text-white/60 uppercase tracking-widest">Short Film · Sound Design</span>
+            <h3 class="font-headline-md text-headline-md text-white font-extrabold mb-1 mt-1">อาก เลือด (HAK LUEAT)</h3>
+            <p class="font-body-md text-body-md text-white/70 line-clamp-2">Psychological short film — Sound Recordist, Sound Designer & Post-Production Supervisor.</p>
+          </div>
+          <div class="folder-panel absolute bottom-0 left-0 w-full h-full bg-background z-10">
+            <div class="mt-[15%] p-6 flex flex-col justify-between h-[85%]">
+              <div class="flex flex-wrap gap-2">
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Sound Design</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Production</span>
+                <span class="border border-primary px-3 py-1 font-label-md text-[10px] text-primary uppercase">Post-Production</span>
+              </div>
+              <div class="flex justify-between items-center mt-auto">
+                <span class="font-headline-md text-primary">View Project</span>
+                <span class="material-symbols-outlined text-3xl">arrow_outward</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Other Works -->
+        <a href="projects/other-works.html" class="group relative aspect-[4/3] border border-primary rounded-[24px] overflow-hidden bg-secondary cursor-pointer block">
+          <div class="p-6 h-full flex flex-col justify-center items-center text-center">
+            <h3 class="font-display text-[32px] text-primary font-extrabold uppercase mb-4">Other Works</h3>
+            <p class="font-body-md text-primary max-w-xs">CMU Badminton Club, DID Art & Craft, Fine Art Badminton, and more.</p>
+            <div class="mt-8 bg-primary text-on-primary px-6 py-2 flex items-center gap-2 font-label-md text-label-md uppercase group-hover:bg-background group-hover:text-primary transition-colors">
+              All Projects
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer / Contact -->
+<footer class="flex flex-col w-full border-t border-primary" id="contact">
+  <!-- Top Half -->
+  <div class="bg-background relative py-xl px-margin-mobile md:px-margin-desktop text-center border-b border-primary overflow-hidden">
+    <h2 class="font-display text-[10vw] md:text-[80px] text-primary font-extrabold uppercase leading-none tracking-tighter mb-4 relative z-10">
+      <span class="bg-secondary text-primary border border-primary px-2 inline-block -rotate-2 no-radius">Thank You</span><br>
+      Looking Forward to<br>
+      <span class="bg-secondary text-primary border border-primary px-2 inline-block rotate-1 no-radius">Connect with You!</span>
+    </h2>
+  </div>
+  <!-- Bottom Half -->
+  <div class="bg-primary py-xl px-margin-mobile md:px-margin-desktop">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-xl">
+      <!-- Left: Info -->
+      <div class="flex flex-col gap-md">
+        <a class="font-headline-md text-headline-md font-extrabold text-on-primary" href="#">Sahatsaphat.</a>
+        <div class="flex flex-col gap-xs font-body-md text-body-md text-on-primary">
+          <a class="hover:text-secondary transition-colors flex items-center gap-2" href="mailto:sahassapat2605@gmail.com">
+            <span class="material-symbols-outlined text-sm">mail</span> sahassapat2605@gmail.com
+          </a>
+          <a class="hover:text-secondary transition-colors flex items-center gap-2" href="tel:+66841413238">
+            <span class="material-symbols-outlined text-sm">call</span> +66 84 141 3238
+          </a>
+          <p class="flex items-center gap-2 mt-1">
+            <span class="material-symbols-outlined text-sm">location_on</span> Bangkok, Thailand
+          </p>
+        </div>
+        <div class="flex gap-sm mt-sm">
+          <a class="text-on-primary hover:text-secondary transition-colors border border-on-primary/30 p-2" href="https://linkedin.com/in/sahassapat-canari-82723933b" target="_blank">
+            <span class="material-symbols-outlined">link</span>
+          </a>
+          <a class="text-on-primary hover:text-secondary transition-colors border border-on-primary/30 p-2" href="Port_NEW.pdf" target="_blank">
+            <span class="material-symbols-outlined">work</span>
+          </a>
+          <a class="text-on-primary hover:text-secondary transition-colors border border-on-primary/30 p-2" href="mailto:sahassapat2605@gmail.com">
+            <span class="material-symbols-outlined">mail</span>
+          </a>
+        </div>
+      </div>
+      <!-- Right: Signature -->
+      <div class="flex flex-col items-start md:items-end gap-sm text-on-primary">
+        <p class="font-label-md text-label-md uppercase tracking-widest text-secondary">Warm Regards,</p>
+        <div class="border-b border-on-primary pb-2 w-48 text-right">
+          <span class="font-cursive text-[32px] block text-on-primary">Sahatsaphat</span>
+        </div>
+        <p class="font-caption text-caption text-on-primary mt-sm">© 2026 Sahatsaphat Chanurai. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
